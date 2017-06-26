@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E192b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Splash" customModule="KituraVision" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aF0-tQ-ulT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OfA-Co-WEH">
+                                <rect key="frame" x="0.0" y="222" width="375" height="222"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NU1-Rg-6YL">
+                                <rect key="frame" x="0.0" y="444" width="375" height="222"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A37-gZ-TxE">
+                                <rect key="frame" x="329" y="28" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Q5W-GS-I6q"/>
+                                    <constraint firstAttribute="height" constant="30" id="oaD-yp-Q2g"/>
+                                </constraints>
+                                <state key="normal" image="Refresh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reloadPages" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZH-zT-E8z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading First Page..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMG-n8-8k2">
+                                <rect key="frame" x="-0.5" y="0.5" width="375" height="222"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Second Page..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nd-fH-eZi">
+                                <rect key="frame" x="0.0" y="222" width="375" height="222"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Last Page..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coG-lE-XJc">
+                                <rect key="frame" x="0.0" y="444" width="375" height="222"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NU1-Rg-6YL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.333" id="0sA-oo-hfr"/>
+                            <constraint firstItem="dMG-n8-8k2" firstAttribute="centerY" secondItem="aF0-tQ-ulT" secondAttribute="centerY" id="3g3-Hb-PVd"/>
+                            <constraint firstItem="aF0-tQ-ulT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="4Sy-bS-Use"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A37-gZ-TxE" secondAttribute="trailing" id="64q-UB-JcQ"/>
+                            <constraint firstItem="aF0-tQ-ulT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8CT-AS-uqk"/>
+                            <constraint firstItem="coG-lE-XJc" firstAttribute="centerY" secondItem="NU1-Rg-6YL" secondAttribute="centerY" id="EuW-BL-nOA"/>
+                            <constraint firstItem="OfA-Co-WEH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.333" id="FGr-RS-2uh"/>
+                            <constraint firstItem="dMG-n8-8k2" firstAttribute="centerX" secondItem="aF0-tQ-ulT" secondAttribute="centerX" id="FTv-6p-XFM"/>
+                            <constraint firstItem="aF0-tQ-ulT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.333" id="L8o-VD-pTO"/>
+                            <constraint firstItem="coG-lE-XJc" firstAttribute="height" secondItem="NU1-Rg-6YL" secondAttribute="height" id="Lgu-v8-Use"/>
+                            <constraint firstItem="0nd-fH-eZi" firstAttribute="height" secondItem="OfA-Co-WEH" secondAttribute="height" id="O1R-1D-VTY"/>
+                            <constraint firstItem="OfA-Co-WEH" firstAttribute="top" secondItem="aF0-tQ-ulT" secondAttribute="bottom" id="UpA-rW-O91"/>
+                            <constraint firstItem="coG-lE-XJc" firstAttribute="centerX" secondItem="NU1-Rg-6YL" secondAttribute="centerX" id="XDP-G9-uUt"/>
+                            <constraint firstItem="coG-lE-XJc" firstAttribute="width" secondItem="NU1-Rg-6YL" secondAttribute="width" id="ZLE-ZC-bho"/>
+                            <constraint firstItem="aF0-tQ-ulT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Zkx-7E-UCd"/>
+                            <constraint firstItem="dMG-n8-8k2" firstAttribute="width" secondItem="aF0-tQ-ulT" secondAttribute="width" id="fxF-SD-x6x"/>
+                            <constraint firstItem="0nd-fH-eZi" firstAttribute="centerY" secondItem="OfA-Co-WEH" secondAttribute="centerY" id="hLC-rq-WaJ"/>
+                            <constraint firstItem="NU1-Rg-6YL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="hW6-9W-hY7"/>
+                            <constraint firstItem="0nd-fH-eZi" firstAttribute="width" secondItem="OfA-Co-WEH" secondAttribute="width" id="iLT-VG-1qt"/>
+                            <constraint firstItem="NU1-Rg-6YL" firstAttribute="top" secondItem="OfA-Co-WEH" secondAttribute="bottom" id="oSW-Mj-8to"/>
+                            <constraint firstItem="OfA-Co-WEH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="olV-UV-Z7p"/>
+                            <constraint firstItem="0nd-fH-eZi" firstAttribute="centerX" secondItem="OfA-Co-WEH" secondAttribute="centerX" id="qKa-7D-Z2O"/>
+                            <constraint firstItem="A37-gZ-TxE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="rnz-d3-I17"/>
+                            <constraint firstItem="NU1-Rg-6YL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sRi-Nr-qgJ"/>
+                            <constraint firstItem="dMG-n8-8k2" firstAttribute="height" secondItem="aF0-tQ-ulT" secondAttribute="height" id="xYY-vZ-xQK"/>
+                            <constraint firstItem="OfA-Co-WEH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="yw4-JB-UrM"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="BlueLoadingLabel" destination="coG-lE-XJc" id="pi2-yN-yue"/>
+                        <outlet property="BluePage" destination="NU1-Rg-6YL" id="Guu-T9-XGs"/>
+                        <outlet property="OrangeLoadingLabel" destination="dMG-n8-8k2" id="dbF-aV-lP9"/>
+                        <outlet property="OrangePage" destination="aF0-tQ-ulT" id="Ysc-gk-mMX"/>
+                        <outlet property="RedLoadingLabel" destination="0nd-fH-eZi" id="whT-WA-3DJ"/>
+                        <outlet property="RedPage" destination="OfA-Co-WEH" id="tHi-eI-bvy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Refresh" width="33" height="32"/>
+    </resources>
+</document>
